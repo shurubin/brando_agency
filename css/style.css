@@ -1,0 +1,199 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: 2;
+}
+#wrap #header .container {
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+#wrap #header .container .gap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .headerline {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-top: 10px;
+}
+#wrap #header .container .gap .headerline .img {
+  display: flex;
+  padding: 11px 15px;
+}
+#wrap #header .container .gap .headerline .img img {
+  width: 166px;
+  height: 35px;
+}
+#wrap #header .container .gap .headerline .menu {
+  display: flex;
+  width: 100%;
+  max-width: 620px;
+  padding: 0 15px;
+}
+#wrap #header .container .gap .headerline .menu h3 {
+  margin: 15px 20px;
+}
+#wrap #header .container .gap .headerline .menu h3 a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+}
+#wrap #header .container .gap .headerline .menu h3 a:hover {
+  color: #cacaca;
+}
+#wrap #header .container .gap .headerline .start {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+#wrap #header .container .gap .headerline .start h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 20px;
+}
+#wrap #header .container .gap .headerline .start button {
+  padding: 4px 6px;
+  width: 105px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0);
+}
+#wrap #main {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .container .slide-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  width: 400%;
+  display: flex;
+  animation: slide 12s infinite ease-in-out;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  height: 100vh;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/slider-img1.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/slider-img2.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/slider-img3.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .center {
+  width: 100%;
+  max-width: 1140px;
+  position: absolute;
+  z-index: 3;
+  margin: 300px 0 0 360px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .center h2 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .center h3 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .center hr {
+  margin: 80px 0;
+  width: 570px;
+  height: 8px;
+  background-color: #fdd947;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .center h4 {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+@keyframes slide {
+  0.0% {
+    transform: translateX(0px);
+  }
+  8.3% {
+    transform: translateX(0px);
+  }
+  16.6% {
+    transform: translateX(0px);
+  }
+  24.9% {
+    transform: translateX(0px);
+  }
+  33.2% {
+    transform: translateX(-1903px);
+  }
+  41.5% {
+    transform: translateX(-1903px);
+  }
+  49.8% {
+    transform: translateX(-1903px);
+  }
+  58.1% {
+    transform: translateX(-1903px);
+  }
+  66.4% {
+    transform: translateX(-3806px);
+  }
+  74.7% {
+    transform: translateX(-3806px);
+  }
+  83.0% {
+    transform: translateX(-3806px);
+  }
+  91.3% {
+    transform: translateX(-3806px);
+  }
+  100.0% {
+    transform: translateX(-5709px);
+  }
+}
